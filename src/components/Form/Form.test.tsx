@@ -2,7 +2,6 @@ import "@testing-library/react";
 import { act, fireEvent, render, screen } from "../../utils/test-util";
 import Form from ".";
 import { RecoilRoot } from "recoil";
-import { debug } from "console";
 
 describe("Form Tests", () => {
   it("Quando input está vazio, não podem ser incluidos novos participantes", () => {

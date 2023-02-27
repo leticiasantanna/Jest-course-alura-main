@@ -25,9 +25,7 @@ const Form = () => {
         <input
           ref={inputRef}
           value={name}
-          onChange={(event: { target: { value: any } }) =>
-            setName(event.target.value)
-          }
+          onChange={(event) => setName(event.target.value)}
           type="text"
           placeholder="Adicione os nomes dos participantes"
         />
