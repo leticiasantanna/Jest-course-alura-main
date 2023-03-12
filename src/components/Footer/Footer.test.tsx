@@ -9,7 +9,15 @@ jest.mock("../../state/hooks/listOfParticipants", () => {
   };
 });
 
+const mockSort = jest.fn();
 const mockNavigate = jest.fn();
+
+jest.mock("../../state/hooks/useSort", () => {
+  return {
+    useSort: () => mockSort,
+  };
+});
+
 jest.mock("react-router-dom", () => {
   return {
     useNavigate: () => mockNavigate,
@@ -20,7 +28,7 @@ describe("There is no participants to init the game", () => {
   beforeEach(() => {
     (ListOfParticipants as jest.Mock).mockReturnValue([]);
   });
-  test("the game cant be init", () => {
+  it("the game cant be init", () => {
     render(
       <RecoilRoot>
         <Footer />
@@ -59,5 +67,6 @@ describe("There is participants enough", () => {
     fireEvent.click(button);
     expect(mockNavigate).toHaveBeenCalledTimes(1);
     expect(mockNavigate).toHaveBeenCalledWith("/sorteio");
+    expect(mockSort).toHaveBeenCalledTimes(1);
   });
 });

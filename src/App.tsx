@@ -1,7 +1,8 @@
-import Sort from "./pages/Sort";
 import { BrowserRouter } from "react-router-dom";
 import { RecoilRoot } from "recoil";
 import { Route, Routes } from "react-router";
+import Config from "./components/pages/Configs";
+import Sorteio from "./components/pages/Sort";
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <BrowserRouter>
         <RecoilRoot>
           <Routes>
-            <Route element={Sort} />
+            <Route path="/" element={<Config />} />
+            <Route path="/sorteio" element={<Sorteio />} />
           </Routes>
         </RecoilRoot>
       </BrowserRouter>
