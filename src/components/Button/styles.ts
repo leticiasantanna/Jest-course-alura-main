@@ -17,8 +17,8 @@ export const Container = styled.button<IContainerProps>`
   cursor: pointer;
 
   &.${ButtonEnum.Primary} {
-    background: ${({ theme }) => theme.colors.primary};
-    color: ${({ theme }) => theme.colors.text.primary};
+    background: ${({ theme }) => theme.colors?.primary};
+    color: ${({ theme }) => theme.colors.text?.primary};
     font-weight: ${({ theme }) => theme.font.weight.semibold};
     box-shadow: 4px 4px 0px #000000;
 

@@ -19,7 +19,7 @@ const themeDefault: DefaultTheme = {
     skeleton2: "#efeaea",
 
     text: {
-      primary: "#fff",
+      primary: '#fff',
       primaryInverted: "#000",
       secondary: "#1C1A1C",
     },

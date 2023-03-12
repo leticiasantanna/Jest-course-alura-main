@@ -29,7 +29,8 @@ const Form = () => {
           type="text"
           placeholder="Adicione os nomes dos participantes"
         />
-        <Button title="Adicionar" maxWidth={150} disabled={!name} />
+        <button disabled={!name}>Adicionar</button>
+        {/* <Button title="Adicionar" maxWidth={150} disabled={!name} /> */}
         {errorMessageText && <p role="alert">{errorMessageText}</p>}
       </Styles.Container>
     </>

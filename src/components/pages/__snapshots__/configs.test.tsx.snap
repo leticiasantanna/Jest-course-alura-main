@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`page of configs must be render conrrectly 1`] = `
+<div>
+  <form
+    class="sc-bcXHqe"
+  >
+    <input
+      placeholder="Adicione os nomes dos participantes"
+      type="text"
+      value=""
+    />
+    <button
+      disabled=""
+    >
+      Adicionar
+    </button>
+    
+  </form>
+  <ul />
+  <footer>
+    <button
+      disabled=""
+    >
+      Iniciar brincadeira
+    </button>
+  </footer>
+</div>
+`;
